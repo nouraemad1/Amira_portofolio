@@ -1,0 +1,81 @@
+:root {
+    --primary-color: #0000aa; /* أزرق غامق */
+    --secondary-color: #ffffff; /* أبيض */
+    --text-color: #000000; /* أسود */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 2rem;
+}
+
+.articles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.article-card {
+    border: 1px solid var(--primary-color);
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.article-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--primary-color);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+footer a {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
